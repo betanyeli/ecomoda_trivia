@@ -24,3 +24,14 @@ section {
   width: 50%;
   text-align: center;
 }
+
+#second_cat, #first_cat{
+  display: none;
+}
+
+.counter_result{
+  padding: 15px;
+  display: grid;
+}
+
+/* Button styles */

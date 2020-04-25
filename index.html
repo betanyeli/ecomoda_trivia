@@ -23,46 +23,63 @@
             <p>Selecciona una categoría</p>
             <input type="radio" name="check" value="first_cat" onclick="selectCategories()">Cuartel de las feas</input>
             <input type="radio" name="check" value="second_cat" onclick="selectCategories()">San Marino</input>
+            <br>
 
         </section>
 
         <section id="first_cat">
+            <div id="1">
+                <h2>¿Cómo se llama la protagonista de Yo soy Betty, la fea?</h2>
+                <input type="radio" name="check_1" value="Betty">Betty? 🙄</input>
+                <input type="radio" name="check_1" value="Paty">Patricia</input>
+                <input type="radio" name="check_1" value="Juana">Juana</input>
+            </div>
+            <div id="2">
+                <h2>¿Cómo se llama el mejor amigo de la protagonista?</h2>
+                <input type="radio" name="check_2" value="Armando">Armando</input>
+                <input type="radio" name="check_2" value="Freddy">Freddy</input>
+                <input type="radio" name="check_2" value="Nicolás">Nicolás</input>
+            </div>
+            <div id="3">
+                <h2>¿Cómo se llama el papá de Don Armando?</h2>
+                <input type="radio" name="check_3" value="Gutiérrez">Gutiérrez 🙄</input>
+                <input type="radio" name="check_3" value="Roberto">Roberto Mendoza</input>
+                <input type="radio" name="check_3" value="Daniel">Daniel Valencia</input>
+            </div>
+            <div class="counter_result">
 
-            <h2>¿Cómo se llama la protagonista de Yo soy Betty, la fea?</h2>
-            <input type="radio" name="check_1" value="Betty">Betty? 🙄
-            <input type="radio" name="check_1" value="Paty">Patricia
-            <input type="radio" name="check_1" value="Juana">Juana
+                <button type="button" onclick="resultsFirstCat()">Resultados </button>
+                <p id="counter_first"></p>
+            </div>
 
-            <h2>¿Cómo se llama el mejor amigo de la protagonista?</h2>
-            <input type="radio" name="check_2" value="Armando">Armando
-            <input type="radio" name="check_2" value="Freddy">Freddy
-            <input type="radio" name="check_2" value="Nicolás">Nicolás
-
-            <h2>¿Cómo se llama el papá de Don Armando?</h2>
-            <input type="radio" name="check_3" value="Gutiérrez">Gutiérrez 🙄
-            <input type="radio" name="check_3" value="Roberto">Roberto Mendoza
-            <input type="radio" name="check_3" value="Daniel">Daniel Valencia
-            <button type="button" onclick="resultsFirstCat()">Resultados </button>
-                    <p id="counter_first"></p>
         </section>
 
         <section id="second_cat">
-            <h2>¿Cómo se llama la mejor Amiga de PatsyPats?</h2>
-            <input type="radio" name="check_4" value="Marce">Marcela Valencia 
-            <input type="radio" name="check_4" value="Paty">Pupuchurra
-            <input type="radio" name="check_4" value="Juana">Juanita
+            <div id="4">
+                <h2>¿Cómo se llama la mejor Amiga de PatsyPats?</h2>
+                <input type="radio" name="check_4" value="Marce">Marcela Valencia</input>
+                <input type="radio" name="check_4" value="Pupuchurra">Pupuchurra</input>
+                <input type="radio" name="check_4" value="Juana">Juanita</input>
+            </div>
+            <div id="5">
+                <h2>¿Quién es la peliteñida?</h2>
+                <input type="radio" name="check_5" value="GutiGut🙄">GutiGut🙄</input>
+                <input type="radio" name="check_5" value="Patricia">Patricia Fernández</input>
+                <input type="radio" name="check_5" value="Patricio">Moscorrofio</input>
+            </div>
+            <div id="6">
+                <h2>¿Quién es el triple papito?</h2>
+                <input type="radio" name="check_6" value="Marcelita">Gutiérrez 🙄</input>
+                <input type="radio" name="check_6" value="Michelle">El francés</input>
+                <input type="radio" name="check_6" value="Juana">Daniel Valencia</input>
+            </div>
 
-            <h2>¿Quién es la peliteñida?</h2>
-            <input type="radio" name="check_5" value="Julio">GutiGut🙄
-            <input type="radio" name="check_5" value="Paty">Patricia Fernández
-            <input type="radio" name="check_5" value="Patricio">Moscorrofio
+            <div class="counter_result">
+                <button type="button" onclick="resultsSecondCat()">Resultados </button>
+                <p id="counter_second"></p>
+            </div>
 
-            <h2>¿Quién es el triple papito?</h2>
-            <input type="radio" name="check_6" value="Marcelita">Gutiérrez 🙄
-            <input type="radio" name="check_6" value="Michelle">El francés
-            <input type="radio" name="check_6" value="Juana">Daniel Valencia
-            <button type="button" onclick="resultsSecondCat()">Resultados </button>
-                    <p id="counter_second"></p>
+
         </section>
 
     </div>

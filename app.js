@@ -1,7 +1,7 @@
 let correctAnswers= ["Betty", "Nicolás", "Roberto", "Marce", "Patricia", "Michelle"]
-// función que guarda el nombre del usuario y lo muestra en saludo
-function welcomeGreetings() {
-    let textValue = document.getElementById("text_value").value; //capture name
+
+function welcomeGreetings() { 
+    let textValue = document.getElementById("text_value").value; 
     let responseGreetings = document.getElementById("response_greetings");
     /* If the name value is empty, greets with a default msj*/
     textValue === ""
@@ -10,7 +10,6 @@ function welcomeGreetings() {
     document.getElementById("home").style.display = "none";
   }
   
-  // funcion que muestra u oculta categorías
   
   function selectCategories() {
     let firstCat = document.getElementById("first_cat");
@@ -27,7 +26,7 @@ function welcomeGreetings() {
   
   }
   
-  // Array de respuestas correctas:
+  // Refactor this:
   
   
   function resultsFirstCat(){
@@ -39,6 +38,7 @@ function welcomeGreetings() {
     correctAnswers.includes(check_1) ? correct++ : incorrect++;
     correctAnswers.includes(check_2) ? correct++ : incorrect++;
     correctAnswers.includes(check_3) ? correct++ : incorrect++;
+    
     return document.getElementById("counter_first").innerHTML= "Correctas " + correct + "  Incorrectas " + incorrect ;
   }
 

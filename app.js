@@ -1,3 +1,4 @@
+let correctAnswers= ["Betty", "Nicolás", "Roberto", "Marce", "Patricia", "Michelle"]
 // función que guarda el nombre del usuario y lo muestra en saludo
 function welcomeGreetings() {
     let textValue = document.getElementById("text_value").value; //capture name
@@ -29,24 +30,26 @@ function welcomeGreetings() {
   // Array de respuestas correctas:
   
   
-  function results(){
-    let correctAnswers= ["Betty", "Nicolás", "Roberto", "Marce", "Patricia", "Michelle"]
+  function resultsFirstCat(){
     let correct=0;
     let incorrect=0;
     let check_1 = document.querySelector('input[name="check_1"]:checked').value;
     let check_2 = document.querySelector('input[name="check_2"]:checked').value;
     let check_3 = document.querySelector('input[name="check_3"]:checked').value;
-
-    
     correctAnswers.includes(check_1) ? correct++ : incorrect++;
     correctAnswers.includes(check_2) ? correct++ : incorrect++;
     correctAnswers.includes(check_3) ? correct++ : incorrect++;
+    return document.getElementById("counter_first").innerHTML= "Correctas " + correct + "  Incorrectas " + incorrect ;
+  }
 
-    // if(correctAnswers.includes(check_1)){
-    //   correct++
-      
-    // } else {
-    //     incorrect++
-    // }
-    return document.getElementById("counter").innerHTML= "Correctas " + correct + "  Incorrectas " + incorrect ;
+  function resultsSecondCat(){
+    let correct=0;
+    let incorrect=0;
+    let check_4 = document.querySelector('input[name="check_4"]:checked').value;
+    let check_5 = document.querySelector('input[name="check_5"]:checked').value;
+    let check_6 = document.querySelector('input[name="check_6"]:checked').value;
+    correctAnswers.includes(check_4) ? correct++ : incorrect++;
+    correctAnswers.includes(check_5) ? correct++ : incorrect++;
+    correctAnswers.includes(check_6) ? correct++ : incorrect++;
+    return document.getElementById("counter_second").innerHTML= "Correctas " + correct + "  Incorrectas " + incorrect ;
   }

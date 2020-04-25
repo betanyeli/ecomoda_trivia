@@ -1,0 +1,24 @@
+{
+  "name": "trivia",
+  "version": "1.0.0",
+  "description": "trivia app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/betanyeli/ecomoda_trivia.git"
+  },
+  "keywords": [
+    "trivia",
+    "javascript",
+    "laboratoria"
+  ],
+  "author": "Yo mijo-.-",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/betanyeli/ecomoda_trivia/issues"
+  },
+  "homepage": "https://github.com/betanyeli/ecomoda_trivia#readme"
+}

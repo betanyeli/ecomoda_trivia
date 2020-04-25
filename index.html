@@ -1,0 +1,60 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <title> Auxilio, me desmayo</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="root">
+        <section class="screens" id="home">
+            <h1 class="home_items">Bienvenido a Ecomoda</h1>
+            <p class="home_items"> ¿Cómo te llamas?</p>
+            <input type="text" id="text_value"></input>
+            <button type="submit" onclick="welcomeGreetings()" id="button_greetings">Inicia</button>
+
+        </section>
+
+        <section id="page_1">
+            <p id="response_greetings"></p>
+            <p>Selecciona una categoría</p>
+            <input type="radio" name="check" value="first_cat" onclick="selectCategories()">Cuartel de las feas</input>
+            <input type="radio" name="check" value="second_cat" onclick="selectCategories()">San Marino</input>
+
+        </section>
+
+        <section id="first_cat">
+
+            <h2>¿Cómo se llama la protagonista de Yo soy Betty, la fea?</h2>
+            <input type="radio" name="check_1" value="Betty">Betty? 🙄
+            <input type="radio" name="check_1" value="Paty">Patricia
+            <input type="radio" name="check_1" value="Juana">Juana
+
+            <h2>¿Cómo se llama el mejor amigo de la protagonista?</h2>
+            <input type="radio" name="check_2" value="Armando">Armando
+            <input type="radio" name="check_2" value="Freddy">Freddy
+            <input type="radio" name="check_2" value="Nicolás">Nicolás
+
+            <h2>¿Cómo se llama el papá de Don Armando?</h2>
+            <input type="radio" name="check_3" value="Gutiérrez">Gutiérrez 🙄
+            <input type="radio" name="check_3" value="Roberto">Roberto Mendoza
+            <input type="radio" name="check_3" value="Daniel">Daniel Valencia
+            <button type="button" onclick="results()">Resultados </button>
+                    <p id="counter"></p>
+        </section>
+
+        <section id="second_cat">
+            <h2>¿Cómo se llama el papá de Don Armando?</h2>
+            <input type="radio" name="check_1" value="Bett">Gutiérrez 🙄
+            <input type="radio" name="check_1" value="Paty">Roberto Mendoza
+            <input type="radio" name="check_1" value="Juana">Daniel Valencia
+        </section>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

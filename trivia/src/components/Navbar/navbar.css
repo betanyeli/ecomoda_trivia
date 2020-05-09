@@ -1,0 +1,9 @@
+/*Overwriting bootstrap styles, not the best practices*/
+
+.nav {
+    background-color: #f7acf3!important;
+}
+
+a {
+color: white!important;
+}

@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/questions",
+            "lambdaFunction": "trivia",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "api",
+    "apiName": "api",
+    "functionArns": [
+        {
+            "lambdaFunction": "trivia"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-trivia-dev-213552-authRole",
+        "unAuthRoleName": "amplify-trivia-dev-213552-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "trivia",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
